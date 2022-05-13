@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Transition from '../utils/Transition';
-import { Link } from 'react-router-dom';
+import Transition from '../../utils/Transition';
 
-import FeaturesBg from '../images/50.png';
-import FeaturesElement from '../images/50.png';;
 
-function Features() {
+import FeaturesElement from '../../images/50.png';;
+
+function SoftwareDev() {
 
   const [tab, setTab] = useState(1);
 
@@ -34,7 +33,7 @@ function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions</h1>
+            <h1 className="h2 mb-4">Software Development</h1>
             <p className="text-xl text-gray-600">We offer a wide variety of solutions for our clients worldwide. Below you could find the list of solutions we offer for your business</p>
           </div>
 
@@ -55,7 +54,7 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <Link to="customsoftwaredev" className="font-bold leading-snug tracking-tight mb-1 hover:text-blue-600">Custom Software Development</Link>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Custom Software Development</div>
                     <div className="text-gray-600">We translate unique client requirements into custom software soultions with premium quality and advanced technologies</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -70,7 +69,7 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <Link to="webdev" className="font-bold leading-snug tracking-tight mb-1 hover:text-blue-600">Web Development</Link>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Web Development</div>
                     <div className="text-gray-600">We revolutionize your business ideas using web development services for innovative and next gen  web applications</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -85,7 +84,7 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <Link to="productdev" className="font-bold leading-snug tracking-tight mb-1 hover:text-blue-600">Product Development</Link>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Product Development</div>
                     <div className="text-gray-600">We comprehend clients business ideas and develop innovative software soultions with scalable product architecture</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -101,7 +100,7 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(4); }}
                 >
                   <div>
-                    <Link to="qa" className="font-bold leading-snug tracking-tight mb-1 hover:text-blue-600">Testing and Quality Assurance</Link>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Testing and Quality Assurance</div>
                     <div className="text-gray-600">We maintain quality assurance by rectifying errors and debugging applications for a high performing application</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -155,7 +154,7 @@ function Features() {
 
                     <div className="relative inline-flex flex-col text-left">
                     <ul class="list-disc relative">
-                      <Link to="softwaredev" ><li className=" relative w-full left-10 text-blue-600 ">Software Development</li></Link>
+                      <li className=" relative w-full left-10 text-blue-600 ">Software Development</li>
                       <li className=" relative w-full left-10 text-blue-600">Application Migration and Re-engineering</li>
                       <li className=" relative w-full left-10 text-blue-600">Software Application Development</li>
                       <li className=" relative w-full left-10 text-blue-600">SASS Applications</li>
@@ -326,4 +325,4 @@ function Features() {
   );
 }
 
-export default Features;
+export default SoftwareDev;
